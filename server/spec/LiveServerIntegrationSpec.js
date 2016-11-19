@@ -34,11 +34,13 @@ describe('server', function() {
   });
 
   it('should accept POST requests to /classes/messages', function(done) {
-    var requestParams = {method: 'POST',
+    var requestParams = {
+      method: 'POST',
       uri: 'http://127.0.0.1:3000/classes/messages',
       json: {
         username: 'Jono',
-        message: 'Do my bidding!'}
+        message: 'Do my bidding!'
+      }
     };
 
     request(requestParams, function(error, response, body) {
