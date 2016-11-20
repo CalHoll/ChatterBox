@@ -2,7 +2,7 @@
 
 /* Import node's http module: */
 var http = require('http');
-
+// var url = require('url');
 // other dependencies
 var handleRequest = require('./request-handler.js');
 

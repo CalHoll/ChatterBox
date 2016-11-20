@@ -8,7 +8,7 @@ var app = {
 
   chatCount : 0,
   lastMessageId : 0,
-  server : 'http://127.0.0.1:3000',
+  server : 'http://127.0.0.1:3000/classes/messages',
   roomname: 'lobby',
   messages : [],
   roomList : [],
@@ -47,7 +47,7 @@ var app = {
       url: app.server,
       type: 'GET',
       // data: { order: '-createdAt' },
-      data: '/classes/messages',
+      data: '',
       contentType: 'application/json',
       success: function (data) {
 
